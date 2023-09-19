@@ -98,7 +98,4 @@ function draw() {
     //ends here
 }
 
-function keyPressed() {
 
-    console.log("saved new background");
-}
