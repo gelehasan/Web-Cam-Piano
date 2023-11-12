@@ -1,6 +1,4 @@
-// ********************************
-// BACKGROUND SUBTRACTION EXAMPLE *
-// ********************************
+
 var video;
 //My code starts here
 var prevImg;
