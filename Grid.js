@@ -1,5 +1,5 @@
 class Grid {
-  /////////////////////////////////
+  
   constructor(_w, _h) {
     this.gridWidth = _w;
     this.gridHeight = _h;
@@ -19,13 +19,13 @@ class Grid {
       this.noteState.push(stateColumn);
     }
   }
-  /////////////////////////////////
+  
   run(img) {
     img.loadPixels();
     this.findActiveNotes(img);
     this.drawActiveNotes(img);
   }
-  /////////////////////////////////
+  
   drawActiveNotes(img){
     // draw active notes
     fill(255);
@@ -48,7 +48,7 @@ class Grid {
       }
     }
   }
-  /////////////////////////////////
+  
   findActiveNotes(img){
     for (var x = 0; x < img.width; x += 1) {
         for (var y = 0; y < img.height; y += 1) {
