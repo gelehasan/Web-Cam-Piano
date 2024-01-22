@@ -1,4 +1,3 @@
-
 var video;
 //My code starts here
 var prevImg;
