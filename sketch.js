@@ -12,7 +12,7 @@ var threshold;
 function setup() {
     createCanvas(640 * 2, 480);
     pixelDensity(1);
-      // Captures video from the webcam
+// Captures video from the webcam
     video = createCapture(VIDEO);
     video.hide();
 
@@ -37,7 +37,7 @@ function draw() {
     currImg.filter(BLUR,3)
     //ends here
 
-      // Creates an image for difference comparison
+    // Creates an image for difference comparison
     diffImg = createImage(video.width, video.height);
     //My code starts here
     diffImg.resize(diffImg.width / 4,diffImg.height / 4 );
@@ -87,7 +87,7 @@ function draw() {
 
     //My code starts here
     //i moved this code from keyPressed 
-     //updates the previous image for comparison
+    //updates the previous image for comparison
     prevImg = createImage(currImg.width, currImg.height);
     prevImg.copy(currImg, 0, 0, currImg.width, currImg.height, 0, 0, currImg.width, currImg.height);
 
