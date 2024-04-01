@@ -29,18 +29,16 @@ function draw() {
      // Creates a current image from the video stream
     currImg = createImage(video.width, video.height);
     currImg.copy(video, 0, 0, video.width, video.height, 0, 0, video.width, video.height);
-   
-    //My code starts here
+
+    
     // Resize and apply blur to the current image
     currImg.resize(currImg.width / 4, currImg.height/4); 
     currImg.filter(BLUR,3)
-    //ends here
+
 
     // Creates an image for difference comparison
     diffImg = createImage(video.width, video.height);
-    //My code starts here
     diffImg.resize(diffImg.width / 4,diffImg.height / 4 );
-    //Ends here 
     diffImg.loadPixels();
 
     threshold = thresholdSlider.value();
@@ -84,7 +82,6 @@ function draw() {
     stroke(255);
     text(threshold, 160, 35);
 
-    //My code starts here
     //i moved this code from keyPressed 
     //updates the previous image for comparison
     prevImg = createImage(currImg.width, currImg.height);
@@ -92,7 +89,7 @@ function draw() {
 
     // Run the grid processing on the difference image
     grid.run(diffImg);
-    //ends here
+
 }
 
 
